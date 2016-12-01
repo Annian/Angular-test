@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Angular</title>
-<style>
-body {
-background-color: lightgreen;
-}
-</style>
-</head>
-<body>
-<h1>Angular test Site</h1>
-<p>it starts today</p>
-<h2>module1</h2>
-</body>
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My first AngularJS App</title>
+  </head>
+  <body>
+    <div ng-controller="MyFirstController">
+        <h1>ANgulat first app</h1>
+        <input type="controller" ng-model="name" ng-keyup="displayNumeric();" />
+         My name is: {{name}}
+    <!---whatever ypu type in the input value willalso change the actual name---->
+        <div> Total numeric value is:
+          {{totalValue}}
+        </div>
+    </div>
+  </body>
 </html>
